@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/webpack/bin/webpack.js",
-    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot"
+    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --watch --filename index.html"
   },
   "dependencies": {
     "@webpack-cli/init": "^0.1.2",

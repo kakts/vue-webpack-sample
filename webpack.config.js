@@ -1,6 +1,7 @@
 const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 module.exports = {
+  mode: 'development',
   entry: {
     main: './src/index.js'
   },
@@ -31,7 +32,12 @@ module.exports = {
       vue$: 'vue/dist/vue.esm.js',
     }
   },
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js'
+  },
   devServer: {
-    contentBase: path.resolve(__dirname, 'public')
+    contentBase: path.resolve(__dirname, './'),
+    hot: true
   }
 }
