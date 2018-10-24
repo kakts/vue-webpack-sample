@@ -1,20 +1,21 @@
 <template>
-  <div id='top'>{{ greeting }} World!</div>
+  <div id= 'right'>right!</div>
 </template>
 
 <script>
-
 export default {
   data: function() {
-    return {
-      greeting: 'top'
-    }
   },
   components: {
+
   }
 }
 </script>
 
 <style scoped>
-
+#right {
+  font-size: 2em;
+  background-color: rgb(117, 89, 89);
+  float: left;
+}
 </style>

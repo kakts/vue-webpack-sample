@@ -1,20 +1,21 @@
 <template>
-  <div id='top'>{{ greeting }} World!</div>
+  <div id= 'left'>left!</div>
 </template>
 
 <script>
-
 export default {
   data: function() {
-    return {
-      greeting: 'top'
-    }
   },
   components: {
+
   }
 }
 </script>
 
 <style scoped>
-
+#left {
+  font-size: 2em;
+  background-color: red;
+  float: left;
+}
 </style>

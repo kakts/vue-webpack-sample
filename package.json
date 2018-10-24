@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@webpack-cli/init": "^0.1.2",
+    "axios": "^0.18.0",
     "vue": "^2.5.17",
     "webpack": "^4.20.2"
   },
