@@ -1,5 +1,5 @@
 <template>
-  <div id= 'bottom'>bottom!</br>
+  <div id= 'bottom'>bottom! <br>
 
     <div v-for="currency in info" class="currency">
       <p>{{ currency.description }}</p>

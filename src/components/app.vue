@@ -1,14 +1,14 @@
 <template>
-  <div id='container'> App s s
+  <div id='wrap'> App s s
     <p> data </p>
     <top></top>
-    <left></left>
-    <right></right>
+    <inner></inner>
     <bottom></bottom>
   </div>
 </template>
 
 <script>
+import inner from './inner'
 import top from './top'
 import right from './right'
 import left from './left'
@@ -16,6 +16,7 @@ import bottom from './bottom'
 
 export default {
   components: {
+    inner,
     top,
     right,
     left,
@@ -24,20 +25,14 @@ export default {
 }
 </script>
 
-<style scoped>
-#container {
-  display: block;
-  height: 100%;
-  width: 100%;
+<style>
+body {
+  text-align: center;
   background-color: brown;
 }
-#top {
-  display: block;
-  font-size: 100;
-  height: 30%;
-  width: 100%;
-  background-color: blue;
-  padding: 3px;
-  box-sizing: border-box;
+#wrap {
+  width: 780px;
+  text-align: left;
+  margin: 0 auto;
 }
 </style>
