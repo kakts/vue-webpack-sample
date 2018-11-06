@@ -4,6 +4,8 @@
     <div v-for="n in 10">
       <p>{{ info }}</p>
     </div>
+
+    {{abc}}
   </div>
 </template>
 
@@ -11,8 +13,16 @@
 export default {
   data: function() {
     return {
-      info: 'mainWrap'
+      info: 'mainWrap',
+      abc: 0
     }
+  },
+  mounted: function() {
+    setInterval(() => {
+      console.log('-------');
+      
+      this.abc += 1;
+    }, 1000);
   }
 }
 </script>

@@ -1,6 +1,5 @@
 <template>
-  <div id='wrap'> App s s
-    <p> data </p>
+  <div id='wrap'>
     <top></top>
     <inner></inner>
     <bottom></bottom>
@@ -28,11 +27,9 @@ export default {
 <style>
 body {
   text-align: center;
-  background-color: brown;
 }
 #wrap {
-  width: 780px;
-  text-align: left;
+  width: auto;
   margin: 0 auto;
 }
 </style>

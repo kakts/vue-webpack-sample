@@ -14,5 +14,6 @@
 #sideAphaWrap {
   float: left;
   width: 160px;
+  background-color: #664433;
 }
 </style>
