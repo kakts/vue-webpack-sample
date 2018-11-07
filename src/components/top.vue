@@ -3,6 +3,9 @@
     <div id='top-head'>
       {{ greeting }} World!
     </div>
+    <transition name="fade">
+      <div id='top-test' v-show="ok">hello</div>
+    </transition>
     <div id='top-one'>
       one
     </div>
@@ -23,7 +26,7 @@
 export default {
   data: function() {
     return {
-      greeting: 'top'
+      greeting: 'top',
     }
   },
   components: {
@@ -61,5 +64,11 @@ export default {
     float: left;
     width: 30%;
     background-color: yellow;
+  }
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
   }
 </style>

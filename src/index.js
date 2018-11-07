@@ -1,38 +1,20 @@
 import Vue from 'vue'
+import VueRouter from 'vue-router'
 
 import app from './components/app';
-// import content from './components/content'
-// import footer from './components/footer'
+import routes from './routes.js';
+
+Vue.use(VueRouter);
+
+const router = new VueRouter({
+  routes
+})
+
+
 console.log('------', app)
 new Vue({
   el: '#app',
   template: '<app></app>',
-  components: {app}
-})
-
-// new Vue({
-//   name: 'sidebar',
-//   components: {
-//     app,
-//     sidebar,
-//   },
-//   template: '<sidebar></sidebar>'
-// })
-
-// new Vue({
-//   el: '#content',
-//   components: {
-//     app,
-//     top,
-//   },
-//   template: '<content></content>'
-// })
-
-// new Vue({
-//   el: '#footer',
-//   components: {
-//     app,
-//     top,
-//   },
-//   template: '<footer></footer>'
-// })
+  components: {app},
+  router: router
+});
