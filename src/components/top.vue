@@ -6,16 +6,17 @@
     <transition name="fade">
       <div id='top-test' v-show="ok">hello</div>
     </transition>
+
     <div id='top-one'>
-      one
+        <router-link to="inner">Go to inner</router-link>
     </div>
 
     <div id='top-two'>
-      two
+      <router-link to="todoInput">Go to todoInput</router-link>
     </div>
 
     <div id='top-three'>
-      three
+      <router-link to="profile">Go to Profile</router-link>
     </div>
 
   </div>
@@ -52,7 +53,7 @@ export default {
     background-color: red;
   }
   #top-two {
-        display: block;
+    display: block;
     float: left;
     text-align: center;
     width: 40%;

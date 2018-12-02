@@ -1,13 +1,14 @@
 <template>
   <div id='wrap'>
     <top></top>
-    <inner></inner>
-    <bottom></bottom>
-    <inputForm></inputForm>
-    ----router----
-    <router-link to="inputForm">Go to inputForm</router-link>
-    <router-link to="button">Go to todoList</router-link>
+    <!--<inner></inner>-->
+
+    <!--<inputForm></inputForm>-->
+    <!--<router-link to="inner">Go to inputForm</router-link>
+    <router-link to="button">Go to todoList</router-link>-->
     <router-view></router-view>
+    <textview></textview>
+    <bottom></bottom>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import right from './right'
 import left from './left'
 import bottom from './bottom'
 import inputForm from './inputform'
+import textview from './textview'
 
 export default {
   components: {
@@ -26,7 +28,8 @@ export default {
     right,
     left,
     bottom,
-    inputForm
+    inputForm,
+    textview
   }
 }
 </script>
@@ -34,6 +37,8 @@ export default {
 <style>
 body {
   text-align: center;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  margin: 0 auto;
 }
 #wrap {
   width: auto;
